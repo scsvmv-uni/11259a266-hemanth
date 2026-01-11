@@ -1,4 +1,7 @@
 # Example names to evaluate
+print("Quick Check 1: Pythonic Style Evaluation")
+print("=" * 50)
+
 names_to_evaluate = [
     "user_name",               # Fixed from userName (snake_case)
     "total_count",             # Good
@@ -22,3 +25,5 @@ print("- Use UPPER_CASE for constants")
 print("- Be descriptive but concise")
 print("- Avoid single letters (except in loops)")
 print("- Avoid redundant words (like 'data_list')")
+
+# The text "check the mistake and correctit" was removed as it was causing a SyntaxError.
