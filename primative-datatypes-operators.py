@@ -35,7 +35,7 @@
 print("Welcome to Python! Let's explore the fundamentals.")
 print("=" * 50)
 
-# You have numbers
+# You have 
 3  # => 3
 
 # Math is what you would expect
@@ -43,6 +43,7 @@ print("=" * 50)
 8 - 1   # => 7
 10 * 2  # => 20
 35 / 5  # => 7.0
+
 
 # Floor division rounds towards negative infinity
 5 // 3       # => 1
