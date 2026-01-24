@@ -1,6 +1,6 @@
 ####################################################
-## 2. Variables and Collections
-## Module 2: Advanced Data Structures & Control Flow
+# 2. Variables and Collections
+# Module 2: Advanced Data Structures & Control Flow
 ####################################################
 
 # =============================================================================
@@ -43,7 +43,7 @@ some_var  # => 5
 
 # Accessing a previously unassigned variable is an exception.
 # See Control Flow to learn more about exception handling.
-some_unknown_var  # Raises a NameError
+# Raises a NameError
 
 # if can be used as an expression
 # Equivalent of C's '?:' ternary operator
@@ -150,8 +150,9 @@ filled_dict = {"one": 1, "two": 2, "three": 3}
 # Note keys for dictionaries have to be immutable types. This is to ensure that
 # the key can be converted to a constant hash value for quick look-ups.
 # Immutable types include ints, floats, strings, tuples.
-invalid_dict = {[1,2,3]: "123"}  # => Yield a TypeError: unhashable type: 'list'
-valid_dict = {(1,2,3):[1,2,3]}   # Values can be of any type, however.
+# => Yield a TypeError: unhashable type: 'list'
+invalid_dict = {[1, 2, 3]: "123"}
+valid_dict = {(1, 2, 3): [1, 2, 3]}   # Values can be of any type, however.
 
 # Look up values with []
 filled_dict["one"]  # => 1
@@ -190,7 +191,8 @@ filled_dict.setdefault("five", 5)  # filled_dict["five"] is set to 5
 filled_dict.setdefault("five", 6)  # filled_dict["five"] is still 5
 
 # Adding to a dictionary
-filled_dict.update({"four":4})  # => {"one": 1, "two": 2, "three": 3, "four": 4}
+# => {"one": 1, "two": 2, "three": 3, "four": 4}
+filled_dict.update({"four": 4})
 filled_dict["four"] = 4         # another way to add to dict
 
 # Remove keys from a dictionary with del
@@ -400,8 +402,8 @@ for student in student_data:
     print(f"{name}: {grades} -> Average: {average:.1f}")
 
 # Find students with average > 85
-high_achievers = [s["name"] for s in student_data 
-                 if sum(s["grades"]) / len(s["grades"]) > 85]
+high_achievers = [s["name"] for s in student_data
+                  if sum(s["grades"]) / len(s["grades"]) > 85]
 print(f"High achievers (>85): {high_achievers}")
 
 # Example 2: Text Analysis
@@ -439,7 +441,7 @@ print(f"Group B: {group_b}")
 both_groups = group_a & group_b  # Intersection
 only_a = group_a - group_b       # Difference
 only_b = group_b - group_a       # Difference
-all_students = group_a | group_b # Union
+all_students = group_a | group_b  # Union
 
 print(f"Students in both groups: {both_groups}")
 print(f"Students only in Group A: {only_a}")
